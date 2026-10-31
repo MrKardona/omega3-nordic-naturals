@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrkardona.github.io/omega3-nordic-naturals/sitemap.xml
