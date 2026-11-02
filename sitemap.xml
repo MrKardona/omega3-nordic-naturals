@@ -3,11 +3,11 @@
   <url>
     <loc>https://omega3.importacionesjog.com/</loc>
     <lastmod>2026-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
     <image:image>
       <image:loc>https://omega3.importacionesjog.com/assets/hero-omega3.jpg</image:loc>
-      <image:title>Nordic Naturals Omega-3 Sabor Limón 690 mg 60 Soft Gels</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://omega3.importacionesjog.com/assets/og-omega3.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
