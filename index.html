@@ -1014,14 +1014,30 @@
       fbq('init','1045709320475853');
       fbq('track','PageView');
     };
+    // Google Analytics: misma propiedad de la tienda; la cola guarda los eventos hasta que cargue el script
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());
+    gtag('config','G-9JMPTMTR39');
+    const cargarAnalytics = ()=>{
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9JMPTMTR39';
+      document.head.appendChild(s);
+    };
+    const cargarMedicion = ()=>{ cargarPixel(); cargarAnalytics(); };
     window.addEventListener('load', ()=>{
-      if('requestIdleCallback' in window) requestIdleCallback(cargarPixel,{timeout:3000});
-      else setTimeout(cargarPixel,1500);
+      if('requestIdleCallback' in window) requestIdleCallback(cargarMedicion,{timeout:3000});
+      else setTimeout(cargarMedicion,1500);
     });
     document.addEventListener('click', (e)=>{
-      if(!window.fbq) return;
-      if(e.target.closest('a[href*="/cart-link/"]')) fbq('track','AddToCart',{value:139900,currency:'COP'});
-      else if(e.target.closest('a[href*="wa.me"]')) fbq('track','Contact');
+      if(e.target.closest('a[href*="/cart-link/"]')){
+        if(window.fbq) fbq('track','AddToCart',{value:139900,currency:'COP'});
+        gtag('event','add_to_cart',{currency:'COP',value:139900,items:[{item_id:'272529100',item_name:'Omega-3 Nordic Naturals',price:139900,quantity:1}]});
+      }else if(e.target.closest('a[href*="wa.me"]')){
+        if(window.fbq) fbq('track','Contact');
+        gtag('event','generate_lead',{method:'whatsapp'});
+      }
     });
 
     // Scroll reveal
