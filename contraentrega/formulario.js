@@ -107,7 +107,7 @@
 		+ '<button type="submit" class="js-ce-enviar ce__enviar">' + billete + '<span class="js-ce-enviar-texto">Confirmar pedido</span></button>'
 		+ '<p class="ce__legal">Pagas en efectivo cuando te llegue. Al confirmar aceptas los <a href="' + TIENDA + '/terminos-y-condiciones/" target="_blank">términos</a> y el <a href="' + TIENDA + '/politica-de-privacidad/" target="_blank">tratamiento de tus datos</a>.</p>'
 		+ '<div class="ce__anticipado"><p class="ce__anticipado-titulo">¿Prefieres pagar ahora?</p>'
-		+ '<p class="ce__anticipado-texto">Con tarjeta, PSE o Mercado Pago tienes <strong>5% de descuento adicional</strong>, que se aplica en el pago.</p>'
+		+ '<p class="ce__anticipado-texto">Con tarjeta, PSE o Nequi (ePayco) tienes <strong>5% de descuento adicional</strong>, que se aplica en el pago.</p>'
 		+ '<img class="ce__anticipado-logos" src="' + LOGOS + '" width="390" height="24" loading="lazy" alt="Visa, Mastercard, American Express, Diners Club, Codensa, PSE, Mercado Pago, Daviplata y Efecty">'
 		+ '<a class="js-ce-checkout ce__checkout">Pagar ahora con 5% de descuento</a></div>'
 		+ '</form>'
