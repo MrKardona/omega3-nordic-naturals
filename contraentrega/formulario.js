@@ -19,7 +19,7 @@
 	var CIUDADES = BASE + 'ciudades.json';
 	var LOGOS = BASE + '../pie/medios-de-pago.svg';
 	var TIENDA = 'https://www.importacionesjog.com';
-	var WHATSAPP = '573106609145';
+	var WHATSAPP = '573127828521';
 	var ESCALAS = [{ desde: 3, descuento: 0.10 }, { desde: 2, descuento: 0.05 }];
 	if (!PRODUCTO || !VARIANTE || !(PRECIO > 0) || typeof HTMLDialogElement !== 'function') return;
 
